@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    background-image: url('https://image.tmdb.org/t/p/w500_and_h282_face/uE3MWwQsiaEjtS78lFj00If8AZO.jpg') !important;
+    background-position: center;
+    background-size: 180ch;
+}
+
+.content {
+    display: flex;
+    background: rgba(0, 0, 0, 0.100);
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+.content header {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 10%;
+}
+.content header .buttons {
+    display: flex;
+}
+.content header button {
+    background: rgba(0, 0, 0, 0.300);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    width: 130px;
+    height: 50px;
+    font-size: 15px;
+    margin-left: 5px;
+    border-radius: 1mm;
+}
+
+p {
+    margin-top: 14rem;
+    margin-left: 28mm;
+    font-size: 9ch;
+    font-family: 'Roboto', cursive;
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+    margin-top: 16ex;
+    font-size: larger;
+}
+footer .playandnext {
+    display: flex;
+    align-items: center;
+     background-color: rgba(0, 0, 0, 0.200);
+
+     width: 11rem;
+     height: 4rem;
+     justify-content: space-evenly;
+}
+.playandnext img {
+    cursor: pointer;
+}
+.playandnext button {
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.300);
+    border: none;
+    font-size: medium;
+}
+
+@media(max-width: 700px) {
+
+    main {
+    height: 110vh;
+    }
+  
+    p {
+        font-size: 3rem;
+    }
+    
+    footer {
+        margin-top: 50mm;
+    }
+}
